@@ -18,7 +18,7 @@
   import { toTimelineAsset } from '$lib/utils/timeline-util';
   import { getAssetInfo, type SharedLinkResponseDto } from '@immich/sdk';
   import { IconButton, Logo, toastManager } from '@immich/ui';
-  import { mdiArrowLeft, mdiDownload, mdiFileImagePlusOutline, mdiSelectAll } from '@mdi/js';
+  import { mdiArrowLeft, mdiDownload, mdiSelectAll, mdiTrayArrowUp } from '@mdi/js';
   import { t } from 'svelte-i18n';
   import ControlAppBar from '../shared-components/ControlAppBar.svelte';
   import GalleryViewer from '../shared-components/gallery-viewer/GalleryViewer.svelte';
@@ -112,7 +112,7 @@
               variant="ghost"
               aria-label={$t('add_photos')}
               onclick={() => handleUploadAssets()}
-              icon={mdiFileImagePlusOutline}
+              icon={mdiTrayArrowUp}
             />
           {/if}
 

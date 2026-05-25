@@ -18,7 +18,7 @@
   import { fileUploadHandler, openFileUploadDialog } from '$lib/utils/file-uploader';
   import type { AlbumResponseDto, SharedLinkResponseDto } from '@immich/sdk';
   import { ActionButton, IconButton, Logo } from '@immich/ui';
-  import { mdiDownload, mdiFileImagePlusOutline, mdiPresentationPlay } from '@mdi/js';
+  import { mdiDownload, mdiPresentationPlay, mdiTrayArrowUp } from '@mdi/js';
   import { t } from 'svelte-i18n';
   import ControlAppBar from '../shared-components/ControlAppBar.svelte';
   import ThemeButton from '../shared-components/ThemeButton.svelte';
@@ -120,7 +120,7 @@
             variant="ghost"
             aria-label={$t('add_photos')}
             onclick={() => openFileUploadDialog({ albumId: album.id })}
-            icon={mdiFileImagePlusOutline}
+            icon={mdiTrayArrowUp}
           />
         {/if}
 
